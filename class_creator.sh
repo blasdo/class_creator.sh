@@ -5,7 +5,7 @@ CLASSFILE=$1.hpp
 
 if [ $2 ]; then
 	INHERENCE=": public $2"
-	I_INCLUDE="#include \"$2.hpp\""
+	I_INCLUDE="# include \"$2.hpp\""
 	fi
 
 create_class_file()
