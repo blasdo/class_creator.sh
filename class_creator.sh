@@ -10,10 +10,10 @@ if [[ $2 ]]; then
 
 create_class_file()
 {
-	cat ~/.local/bin/class_creator/blueprint.hpp | sed 's/CLASSNAME_H/'"$1"'_H/g'\
+	cat ~/.local/etc/class_creator/blueprint.hpp | sed 's/CLASSNAME_H/'"$1"'_H/g'\
 	| sed 's/$CLASSNAME/'$1'/g' | sed 's/$classname/'$2'/g'\
 		| sed 's/$INHERENCE/'"$INHERENCE"'/g' | sed 's/$I_INCLUDE/'"$I_INCLUDE"'/g'> $1.hpp
-	cat ~/.local/bin/class_creator/blueprint.cpp | sed 's/$CLASSNAME/'$1'/g' | sed 's/$classname/'$2'/g' | sed 's/$CLASSFILE/'$CLASSFILE'/g' > $1.cpp
+	cat ~/.local/etc/class_creator/blueprint.cpp | sed 's/$CLASSNAME/'$1'/g' | sed 's/$classname/'$2'/g' | sed 's/$CLASSFILE/'$CLASSFILE'/g' > $1.cpp
 }
 
 if [[ $1 ]]; then

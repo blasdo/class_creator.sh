@@ -3,13 +3,13 @@
 
 $CLASSNAME::$CLASSNAME()
 {
-	std::cout << "$CLASSNAME" << " has been created " << 
+	std::cout << "$CLASSNAME" << " has been created" << 
 		" from default constructor" << std::endl;
 }
 
 $CLASSNAME::$CLASSNAME($CLASSNAME const &$classname)
 {
-	std::cout << "$CLASSNAME" << " has been created " << 
+	std::cout << "$CLASSNAME" << " has been created" << 
 		" from copy constructor" << std::endl;
 }
 
@@ -20,7 +20,6 @@ $CLASSNAME::~$CLASSNAME()
 
 $CLASSNAME &$CLASSNAME::operator=($CLASSNAME const &$classname)
 {
-	std::cout << "$CLASSNAME" << " has been created " << 
-		" via assignment operator" << std::endl;
+	std::cout << "$CLASSNAME" << "'s operator called" << std::endl;
 	return *this;
 }

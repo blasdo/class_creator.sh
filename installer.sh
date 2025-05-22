@@ -1,6 +1,7 @@
-mkdir -p ~/.local/bin/class_creator
+mkdir -p ~/.local/bin
+mkdir -p ~/.local/etc/class_creator
 
-cp utils/* ~/.local/bin/class_creator
+cp utils/* ~/.local/etc/class_creator
 
 cp class_creator.sh ~/.local/bin/class_creator.sh
 
